@@ -1,6 +1,6 @@
 import './Banner.css';
 
-function Banner() {
+const Banner = () => {
     // JSX -> Como o React trabalha com a parte visual (parece HTML mas não é)
     // Como se fosse JS puro manipulando o DOM
 
@@ -9,7 +9,7 @@ function Banner() {
         <header className="banner">
             <img src="/imagens/banner.png" alt="O banner principal da página do Organo"/>
         </header>
-    )
+    );
 }
 
 export default Banner;

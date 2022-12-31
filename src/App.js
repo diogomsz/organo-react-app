@@ -1,9 +1,13 @@
-import Banner from './componentes/Banner/Banner';
+import Banner from './componentes/Banner';
+import CampoTexto from './componentes/CampoTexto';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Banner/>
+      <Banner />
+      <CampoTexto label="Nome" placeholder="Digite o seu nome" />
+      <CampoTexto label="Cargo" placeholder="Digite seu cargo" />
+      <CampoTexto label="Imagem" placeholder="Digite o endereço da imagem" />
     </div>
   );
 }
