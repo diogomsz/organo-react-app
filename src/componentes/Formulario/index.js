@@ -48,7 +48,11 @@ const Formulario = () => {
                     valor={imagem}
                     aoAlterado={valor => setImagem(valor)}
                 />
-                <ListaSuspensa obrigatorio={true} label="Time" itens={times} />
+                <ListaSuspensa 
+                    obrigatorio={true} 
+                    label="Time" 
+                    itens={times} 
+                />
                 <Botao>
                     Criar Card
                 </Botao>
