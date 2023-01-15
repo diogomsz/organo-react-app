@@ -6,9 +6,12 @@ const Banner = () => {
 
     // Quando formos setar classes em React, usamos o className em vez de class
     return (
-        <header className="banner">
-            <img src="/imagens/banner.png" alt="O banner principal da página do Organo"/>
-        </header>
+        <> 
+            <header className="banner">
+                <img src="/imagens/banner.png" alt="O banner principal da página do Organo"/>
+            </header>
+            <h1>Teste</h1>
+        </>
     );
 }
 
