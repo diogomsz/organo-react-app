@@ -5,9 +5,7 @@ import Rodape from "./componentes/Rodape";
 import Time from "./componentes/Time";
 import { v4 as uuidv4 } from 'uuid';
 
-
 function App() {
-
   const [times, setTimes] = useState([
     {
       id: uuidv4(),
@@ -223,15 +221,14 @@ function App() {
     console.log('deletando colaborador');
   }
 
-  function mudarCorDoTime(cor, nome) {
+  function mudarCorDoTime(cor, id) {
     setTimes(times.map(time => {
-      if(time.nome === nome) {
+      if(time.id === id) {
         time.cor = cor;
       }
       return time;
     }));
   }
-
 
   return (
     <div>
